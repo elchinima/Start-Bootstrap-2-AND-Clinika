@@ -1,0 +1,215 @@
+  @media (max-width: 900px) {
+    .cards-grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    .products-inner { 
+        padding: 0 24px; 
+    }
+
+    .categories-inner { 
+        padding: 0 24px; 
+    }
+
+    .partners-inner { 
+        padding: 0 24px; 
+    }
+
+    .categories-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .category-card--small,
+    .category-card--wide {
+      grid-column: span 1;
+      aspect-ratio: 4 / 3;
+    }
+
+    .category-overlay-title {
+      font-size: clamp(1.6rem, 4.2vw, 2.3rem);
+    }
+
+    .category-overlay-meta {
+      font-size: clamp(0.95rem, 2.7vw, 1.25rem);
+    }
+
+    .partners-logos {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav { 
+        padding: 16px 24px; 
+    }
+    .nav-links { 
+        display: none; 
+    }
+    .hero-content { 
+        flex-direction: column; 
+        padding: 120px 24px 60px; 
+        text-align: center; 
+    }
+
+    .hero-text p { 
+        margin: 0 auto 28px; 
+    }
+
+    .hero-image { 
+        width: 80%; 
+    }
+
+    .quality-banner {
+      min-height: 420px;
+      background-position: 72% center;
+    }
+
+    .quality-banner-overlay {
+      background: linear-gradient(180deg, rgba(98, 221, 136, 0.9) 0%, rgba(98, 221, 136, 0.78) 100%);
+    }
+    
+    .quality-banner-inner {
+      padding: 60px 24px;
+      text-align: center;
+    }
+
+    .quality-watermark {
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(72px, 26vw, 130px);
+    }
+
+    .quality-banner h2 {
+      max-width: 100%;
+      font-size: clamp(1.7rem, 7vw, 2.4rem);
+    }
+
+    .quality-banner p {
+      max-width: 100%;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .btn-feedback {
+      padding: 15px 36px;
+      font-size: 0.95rem;
+    }
+
+    .subscribe-banner {
+      min-height: 430px;
+      margin-top: 120px;
+    }
+
+    .subscribe-inner {
+      padding: 64px 20px;
+    }
+
+    .subscribe-watermark {
+      top: 20px;
+      font-size: clamp(62px, 20vw, 120px);
+    }
+
+    .subscribe-inner h2 {
+      font-size: clamp(1.6rem, 7vw, 2.5rem);
+    }
+
+    .subscribe-inner p {
+      font-size: 0.98rem;
+      margin-bottom: 24px;
+    }
+
+    .subscribe-form {
+      max-width: 430px;
+      flex-direction: column;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+      gap: 10px;
+    }
+
+    .subscribe-form input {
+      width: 100%;
+      background: #fff;
+      border-radius: 999px;
+      padding: 14px 20px;
+      font-size: 1rem;
+    }
+
+    .subscribe-form button {
+      width: 100%;
+      padding: 14px 20px;
+      font-size: 1rem;
+    }
+
+    .categories-section {
+      padding: 95px 0 100px;
+    }
+
+    .categories-watermark {
+      top: -4px;
+      font-size: clamp(54px, 16vw, 92px);
+    }
+
+    .categories-title {
+      font-size: clamp(1.7rem, 7vw, 2.35rem);
+      margin-bottom: 10px;
+    }
+
+    .categories-subtitle {
+      font-size: 0.95rem;
+    }
+
+    .partners-section {
+      padding: 100px 0 105px;
+    }
+
+    .partners-watermark {
+      top: -2px;
+      font-size: clamp(56px, 18vw, 108px);
+    }
+
+    .partners-title {
+      font-size: clamp(1.8rem, 7vw, 2.5rem);
+      transform: translateY(30px);
+      margin-bottom: 14px;
+    }
+
+    .partners-subtitle {
+      margin-top: 42px;
+      font-size: 0.98rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .categories-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .category-card--small,
+    .category-card--wide {
+      aspect-ratio: 16 / 10;
+    }
+
+    .category-overlay-title {
+      font-size: clamp(1.35rem, 7vw, 2rem);
+    }
+
+    .partners-logos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 18px;
+      margin-top: 48px;
+    }
+
+    .partner-logo {
+      min-height: 74px;
+    }
+    
+    .partner-logo-img {
+      max-height: 72px;
+    }
+  }
